@@ -1,0 +1,115 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "htjvdG/znrHmFYRQBqA2vHrJsF4=",
+			"path": "github.com/Sirupsen/logrus",
+			"revision": "f3cfb454f4c209e6668c95216c4744b8fddb2356",
+			"revisionTime": "2016-06-01T11:32:10Z"
+		},
+		{
+			"checksumSHA1": "4QnLdmB1kG3N+KlDd1N+G9TWAGQ=",
+			"path": "github.com/beorn7/perks/quantile",
+			"revision": "3ac7bf7a47d159a033b107610db8a1b6575507a4",
+			"revisionTime": "2016-02-29T21:34:45Z"
+		},
+		{
+			"checksumSHA1": "M/1HiQFl2DyE+q3pFf8swvAQ3MY=",
+			"path": "github.com/golang/protobuf/proto",
+			"revision": "3852dcfda249c2097355a6aabb199a28d97b30df",
+			"revisionTime": "2016-06-29T21:10:53Z"
+		},
+		{
+			"checksumSHA1": "bKMZjd2wPw13VwoE7mBeSv5djFA=",
+			"path": "github.com/matttproud/golang_protobuf_extensions/pbutil",
+			"revision": "c12348ce28de40eed0136aa2b644d0ee0650e56c",
+			"revisionTime": "2016-04-24T11:30:07Z"
+		},
+		{
+			"checksumSHA1": "OpY4giv8kPIYbaunD7BSgCynj78=",
+			"path": "github.com/prometheus/client_golang/prometheus",
+			"revision": "9f1ed1ed4a5f754c9b626e5cf8ec1ea7d622e017",
+			"revisionTime": "2016-06-27T14:36:20Z"
+		},
+		{
+			"checksumSHA1": "DvwvOlPNAgRntBzt3b3OSRMS2N4=",
+			"path": "github.com/prometheus/client_model/go",
+			"revision": "fa8ad6fec33561be4280a8f0514318c79d7f6cb6",
+			"revisionTime": "2015-02-12T10:17:44Z"
+		},
+		{
+			"checksumSHA1": "68MLX78PD6yqD2VCtHazVkBaj/w=",
+			"path": "github.com/prometheus/common/expfmt",
+			"revision": "4402f4e5ea79ec15f3c574773b6a5198fbea215f",
+			"revisionTime": "2016-06-23T15:14:27Z"
+		},
+		{
+			"checksumSHA1": "GWlM3d2vPYyNATtTFgftS10/A9w=",
+			"path": "github.com/prometheus/common/internal/bitbucket.org/ww/goautoneg",
+			"revision": "4402f4e5ea79ec15f3c574773b6a5198fbea215f",
+			"revisionTime": "2016-06-23T15:14:27Z"
+		},
+		{
+			"checksumSHA1": "qHoBp/PVBcLedTNZrF3toV9QGa0=",
+			"path": "github.com/prometheus/common/log",
+			"revision": "4402f4e5ea79ec15f3c574773b6a5198fbea215f",
+			"revisionTime": "2016-06-23T15:14:27Z"
+		},
+		{
+			"checksumSHA1": "Jx0GXl5hGnO25s3ryyvtdWHdCpw=",
+			"path": "github.com/prometheus/common/model",
+			"revision": "4402f4e5ea79ec15f3c574773b6a5198fbea215f",
+			"revisionTime": "2016-06-23T15:14:27Z"
+		},
+		{
+			"checksumSHA1": "91KYK0SpvkaMJJA2+BcxbVnyRO0=",
+			"path": "github.com/prometheus/common/version",
+			"revision": "4402f4e5ea79ec15f3c574773b6a5198fbea215f",
+			"revisionTime": "2016-06-23T15:14:27Z"
+		},
+		{
+			"checksumSHA1": "W218eJZPXJG783fUr/z6IaAZyes=",
+			"path": "github.com/prometheus/procfs",
+			"revision": "abf152e5f3e97f2fafac028d2cc06c1feb87ffa5",
+			"revisionTime": "2016-04-11T19:08:41Z"
+		},
+		{
+			"checksumSHA1": "jhys1vVeyY6GdVDIiRkA5I1GRiI=",
+			"path": "github.com/sclevine/agouti",
+			"revision": "e5378e70dca437a9e16cc6d71a85aa0045dd94c7",
+			"revisionTime": "2016-02-24T21:38:56Z"
+		},
+		{
+			"checksumSHA1": "cevMax2kqFXdc0OwxRjn28NEX+g=",
+			"path": "github.com/sclevine/agouti/api",
+			"revision": "e5378e70dca437a9e16cc6d71a85aa0045dd94c7",
+			"revisionTime": "2016-02-24T21:38:56Z"
+		},
+		{
+			"checksumSHA1": "Yl+nKbowoSkeEZVjG8JUr1xum3w=",
+			"path": "github.com/sclevine/agouti/api/internal/bus",
+			"revision": "e5378e70dca437a9e16cc6d71a85aa0045dd94c7",
+			"revisionTime": "2016-02-24T21:38:56Z"
+		},
+		{
+			"checksumSHA1": "D/zRQi9pX42xYVX1p3mZrNDGRX4=",
+			"path": "github.com/sclevine/agouti/api/internal/service",
+			"revision": "e5378e70dca437a9e16cc6d71a85aa0045dd94c7",
+			"revisionTime": "2016-02-24T21:38:56Z"
+		},
+		{
+			"checksumSHA1": "Ac+sqfWJvIqAoFnDzZRH8HP/1gg=",
+			"path": "github.com/sclevine/agouti/internal/element",
+			"revision": "e5378e70dca437a9e16cc6d71a85aa0045dd94c7",
+			"revisionTime": "2016-02-24T21:38:56Z"
+		},
+		{
+			"checksumSHA1": "rsdZ0GsD51gqfRPf3NFox3xw8eM=",
+			"path": "github.com/sclevine/agouti/internal/target",
+			"revision": "e5378e70dca437a9e16cc6d71a85aa0045dd94c7",
+			"revisionTime": "2016-02-24T21:38:56Z"
+		}
+	],
+	"rootPath": "github.com/mattbostock/navigation_timing_exporter"
+}

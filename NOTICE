@@ -1,0 +1,6 @@
+Navigation Timing Exporter: Probes a web page and exposes Navigation Timings as a Prometheus exporter
+Copyright 2016 The Prometheus Authors
+
+Uses portions of code from https://github.com/prometheus/blackbox_exporter:
+The Blackbox exporter for blackbox probing metrics
+Copyright 2012-2016 The Prometheus Authors
