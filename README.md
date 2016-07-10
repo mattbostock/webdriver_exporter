@@ -103,7 +103,7 @@ encouraged.
 At the time of writing, PhantomJS did not support probing of sites with strict
 [Content Security Policies][]; see ariya/phantomjs#13114.
 
-[Content Security Policy]: https://www.w3.org/TR/CSP1/
+[Content Security Policies]: https://www.w3.org/TR/CSP1/
 
 ### Requires exact URL as target
 
