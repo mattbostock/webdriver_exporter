@@ -1,4 +1,4 @@
-# Web Driver Exporter
+# WebDriver Exporter
 
 Probes a web page using the [WebDriver protocol][] and exposes metrics for
 [Prometheus][] such as [Navigation Timings][].
