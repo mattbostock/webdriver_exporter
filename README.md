@@ -118,6 +118,11 @@ use `https` as the URL scheme if your target enforces HTTPS.
 
 This requirement could be loosened if there's enough demand for it.
 
+### Probe timeout hardcoded at 5 seconds
+
+Chrome is set to timeout after 5 seconds if it hasn't yet loaded the page. Pull
+requests to make this value configurable are welcomed.
+
 ### Probes are slow to initialise
 
 We start a new [Chromedriver][] session for each probe to ensure that the
