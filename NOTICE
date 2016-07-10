@@ -1,4 +1,4 @@
-Navigation Timing Exporter: Probes a web page and exposes Navigation Timings as a Prometheus exporter
+WebDriver Exporter: Probes a web page using the WebDriver protocol and exposes metrics to Prometheus
 Copyright 2016 The Prometheus Authors
 
 Uses portions of code from https://github.com/prometheus/blackbox_exporter:

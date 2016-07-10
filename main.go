@@ -36,18 +36,18 @@ var (
 
 func init() {
 	version.Version = versionString
-	prometheus.MustRegister(version.NewCollector("navigation_timing_exporter"))
+	prometheus.MustRegister(version.NewCollector("webdriver_exporter"))
 }
 
 func main() {
 	flag.Parse()
 
 	if *showVersion {
-		fmt.Fprintln(os.Stdout, version.Print("navigation_timing_exporter"))
+		fmt.Fprintln(os.Stdout, version.Print("webdriver_exporter"))
 		os.Exit(0)
 	}
 
-	log.Infoln("Starting navigation_timing_exporter", version.Info())
+	log.Infoln("Starting webdriver_exporter", version.Info())
 	log.Infoln("Build context", version.BuildContext())
 
 	http.Handle("/metrics", prometheus.Handler())
@@ -57,10 +57,10 @@ func main() {
 		})
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte(`<html>
-            <head><title>Navigation Timing Exporter</title></head>
+            <head><title>WebDriver Exporter</title></head>
             <body>
-            <h1>Navigation Timing Exporter</h1>
-            <p><a href="/probe?target=prometheus.io">Probe timings for prometheus.io</a></p>
+            <h1>WebDriver Exporter</h1>
+            <p><a href="/probe?target=prometheus.io">Probe prometheus.io</a></p>
             <p><a href="/metrics">Metrics</a></p>
             </body>
             </html>`))

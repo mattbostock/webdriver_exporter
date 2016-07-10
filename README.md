@@ -1,7 +1,7 @@
-# Navigation Timing Exporter
+# Web Driver Exporter
 
-Simulates a browser session using the [WebDriver protocol][] and exposes
-[Navigation Timings][] as a [Prometheus][] exporter.
+Probes a web page using the [WebDriver protocol][] and exposes metrics for
+[Prometheus][] such as [Navigation Timings][].
 
 [Prometheus]: https://prometheus.io/
 [Navigation Timings]: https://www.w3.org/TR/navigation-timing/
@@ -61,10 +61,10 @@ you'll need something like [xvfb][].
 
     go get ./...
     go build
-    ./navigation_timing_exporter <flags>
+    ./webdriver_exporter <flags>
 
 Visiting [http://localhost:9156/probe?target=https://prometheus.io/](http://localhost:9156/probe?target=https://prometheus.io/)
-will return metrics from the Navigation Timing API for prometheus.io.
+will return metrics for prometheus.io.
 
 ## Prometheus Configuration
 
@@ -75,7 +75,7 @@ Example configuration:
 
 ```yaml
 scrape_configs:
-  - job_name: 'navigation_timing'
+  - job_name: 'webdriver'
     metrics_path: /probe
     target_groups:
       - targets:
