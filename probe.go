@@ -56,10 +56,26 @@ func probe(target string, w http.ResponseWriter) bool {
 		log.Error(err)
 		return false
 	}
-
 	for k, v := range timings {
 		fmt.Fprintf(w, "navigation_timing_%s_seconds %f\n", snakeCase(k), v/1000)
 	}
+
+	logs, err := page.ReadAllLogs("browser")
+	if err != nil {
+		log.Error(err)
+		return false
+	}
+	var warningCount, severeCount int
+	for _, log := range logs {
+		if log.Level == "WARNING" {
+			warningCount++
+		}
+		if log.Level == "SEVERE" {
+			severeCount++
+		}
+	}
+	fmt.Fprintf(w, "browser_log_warning_count %d\n", warningCount)
+	fmt.Fprintf(w, "browser_log_severe_count %d\n", severeCount)
 
 	return true
 }

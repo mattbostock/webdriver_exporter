@@ -36,6 +36,8 @@ navigation_timing_domain_lookup_start_seconds 1468151331.271000
 navigation_timing_load_event_start_seconds 1468151332.641000
 navigation_timing_navigation_start_seconds 1468151330.960000
 navigation_timing_redirect_end_seconds 0.000000
+browser_log_warning_count 0
+browser_log_severe_count 1
 probe_duration_seconds 2.596026
 probe_success 1
 ```
