@@ -61,7 +61,7 @@ you'll need something like [xvfb][].
     go build
     ./navigation_timing_exporter <flags>
 
-Visiting [http://localhost:9116/probe?target=https://prometheus.io/](http://localhost:9116/probe?target=https://prometheus.io/)
+Visiting [http://localhost:9156/probe?target=https://prometheus.io/](http://localhost:9156/probe?target=https://prometheus.io/)
 will return metrics from the Navigation Timing API for prometheus.io.
 
 ## Prometheus Configuration
@@ -90,7 +90,7 @@ scrape_configs:
       - source_labels: []
         regex: .*
         target_label: __address__
-        replacement: 127.0.0.1:9116  # Navigation Timing Exporter
+        replacement: 127.0.0.1:9156  # Navigation Timing Exporter
 ```
 
 ## Limitations
