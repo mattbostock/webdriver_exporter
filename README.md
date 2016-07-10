@@ -101,9 +101,10 @@ Only Chromedriver is supported currently. Adding support for other webdrivers
 encouraged.
 
 At the time of writing, PhantomJS did not support probing of sites with strict
-[Content Security Policies][]; see ariya/phantomjs#13114.
+[Content Security Policies][]; see [ariya/phantomjs#13114][].
 
 [Content Security Policies]: https://www.w3.org/TR/CSP1/
+[ariya/phantomjs#13114]: https://github.com/ariya/phantomjs/issues/13114
 
 ### Requires exact URL as target
 
