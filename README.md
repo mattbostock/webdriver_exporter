@@ -123,5 +123,3 @@ This requirement could be loosened if there's enough demand for it.
 We start a new [Chromedriver][] session for each probe to ensure that the
 cache, cookies and local storage are clean. If we could retain the session and
 clear the cache, the time to complete a probe would be significantly reduced.
-
-Currently each probe takes around 2 seconds.
