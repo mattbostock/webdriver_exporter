@@ -26,7 +26,7 @@ import (
 	"github.com/sclevine/agouti"
 )
 
-const versionString = "0.0.1"
+const versionString = "0.0.2"
 
 var (
 	driver        = agouti.ChromeDriver()
