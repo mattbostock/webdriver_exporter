@@ -57,6 +57,7 @@ you'll need something like [xvfb][].
 
 ### Building locally
 
+    go get ./...
     go build
     ./navigation_timing_exporter <flags>
 
