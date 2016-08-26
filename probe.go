@@ -25,27 +25,27 @@ const msInSecond = 1000
 
 // from https://www.w3.org/TR/navigation-timing/#sec-navigation-timing-interface
 type navigationTimings struct {
-	ConnectEnd                 float64 `json:"connectEnd"`
-	ConnectStart               float64 `json:"connectStart"`
-	DomComplete                float64 `json:"domComplete"`
-	DomContentLoadedEventEnd   float64 `json:"domContentLoadedEventEnd"`
-	DomContentLoadedEventStart float64 `json:"domContentLoadedEventStart"`
-	DomInteractive             float64 `json:"domInteractive"`
-	DomLoading                 float64 `json:"domLoading"`
-	DomainLookupEnd            float64 `json:"domainLookupEnd"`
-	DomainLookupStart          float64 `json:"domainLookupStart"`
-	FetchStart                 float64 `json:"fetchStart"`
-	LoadEventEnd               float64 `json:"loadEventEnd"`
-	LoadEventStart             float64 `json:"loadEventStart"`
-	NavigationStart            float64 `json:"navigationStart"`
-	RedirectEnd                float64 `json:"redirectEnd"`
-	RedirectStart              float64 `json:"redirectStart"`
-	RequestStart               float64 `json:"requestStart"`
-	ResponseEnd                float64 `json:"responseEnd"`
-	ResponseStart              float64 `json:"responseStart"`
-	SecureConnectionStart      float64 `json:"secureConnectionStart"`
-	UnloadEventEnd             float64 `json:"unloadEventEnd"`
-	UnloadEventStart           float64 `json:"unloadEventStart"`
+	ConnectEnd                 float64
+	ConnectStart               float64
+	DomComplete                float64
+	DomContentLoadedEventEnd   float64
+	DomContentLoadedEventStart float64
+	DomInteractive             float64
+	DomLoading                 float64
+	DomainLookupEnd            float64
+	DomainLookupStart          float64
+	FetchStart                 float64
+	LoadEventEnd               float64
+	LoadEventStart             float64
+	NavigationStart            float64
+	RedirectEnd                float64
+	RedirectStart              float64
+	RequestStart               float64
+	ResponseEnd                float64
+	ResponseStart              float64
+	SecureConnectionStart      float64
+	UnloadEventEnd             float64
+	UnloadEventStart           float64
 }
 
 func probe(target string, w http.ResponseWriter) bool {
