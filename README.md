@@ -51,7 +51,7 @@ You'll need [chromedriver][]:
     # On Mac OS X using Homebrew
     brew install chromedriver
 
-To run Navigation Timing Exporter on a server with a headless Chrome browser,
+To run WebDriver Exporter on a server with a headless Chrome browser,
 you'll need something like [xvfb][].
 
 [chromedriver]: https://sites.google.com/a/chromium.org/chromedriver/
@@ -68,7 +68,7 @@ will return metrics for prometheus.io.
 
 ## Prometheus Configuration
 
-The Navigation Timing Exporter needs to be passed the target as a parameter,
+The WebDriver Exporter needs to be passed the target as a parameter,
 this can be done with relabelling.
 
 Example configuration:
@@ -92,7 +92,7 @@ scrape_configs:
       - source_labels: []
         regex: .*
         target_label: __address__
-        replacement: 127.0.0.1:9156  # Navigation Timing Exporter
+        replacement: 127.0.0.1:9156  # WebDriver Exporter
 ```
 
 ## Limitations
