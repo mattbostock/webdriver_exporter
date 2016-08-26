@@ -89,7 +89,7 @@ func probeHandler(w http.ResponseWriter, r *http.Request) {
 
 	start := time.Now()
 	success := probe(target, w)
-	fmt.Fprintf(w, "probe_duration_seconds %f\n", float64(time.Now().Sub(start))/1e9)
+	fmt.Fprintf(w, "probe_duration_seconds %f\n", float64(time.Since(start))/1e9)
 
 	if success {
 		fmt.Fprintf(w, "probe_success %d\n", 1)
