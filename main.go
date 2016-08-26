@@ -60,7 +60,7 @@ func main() {
             <head><title>WebDriver Exporter</title></head>
             <body>
             <h1>WebDriver Exporter</h1>
-            <p><a href="/probe?target=prometheus.io">Probe prometheus.io</a></p>
+	    <p><a href="/probe?target=https://prometheus.io/">Probe prometheus.io</a></p>
             <p><a href="/metrics">Metrics</a></p>
             </body>
             </html>`))
