@@ -77,7 +77,7 @@ Example configuration:
 scrape_configs:
   - job_name: 'webdriver'
     metrics_path: /probe
-    target_groups:
+    static_configs:
       - targets:
         - https://prometheus.io/   # Target to probe
     relabel_configs:
