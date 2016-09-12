@@ -95,6 +95,28 @@ scrape_configs:
         replacement: 127.0.0.1:9156  # WebDriver Exporter
 ```
 
+
+Example recording rules:
+
+```
+# Official time breakdown: https://www.w3.org/TR/navigation-timing/
+instance:navigation_timing_back_end_seconds = navigation_timing_response_start_seconds{job="webdriver"} - navigation_timing_start_seconds{job="webdriver"}
+instance:navigation_timing_dom_content_loaded_seconds = navigation_timing_dom_content_loaded_event_start_seconds{job="webdriver"} - navigation_timing_start_seconds{job="webdriver"}
+instance:navigation_timing_dom_interactive_seconds = navigation_timing_dom_interactive_seconds{job="webdriver"} - navigation_timing_start_seconds{job="webdriver"}
+instance:navigation_timing_domain_lookup_seconds = navigation_timing_domain_lookup_end_seconds{job="webdriver"} - navigation_timing_domain_lookup_start_seconds{job="webdriver"}
+instance:navigation_timing_front_end_seconds = navigation_timing_load_event_start_seconds{job="webdriver"} - navigation_timing_response_end_seconds{job="webdriver"}
+instance:navigation_timing_page_download_seconds = navigation_timing_response_end_seconds{job="webdriver"} - navigation_timing_response_start_seconds{job="webdriver"}
+instance:navigation_timing_page_load_seconds = navigation_timing_load_event_start_seconds{job="webdriver"} - navigation_timing_start_seconds{job="webdriver"}
+instance:navigation_timing_redirection_seconds = navigation_timing_fetch_start_seconds{job="webdriver"} - navigation_timing_start_seconds{job="webdriver"}
+instance:navigation_timing_server_connection_seconds = navigation_timing_connect_end_seconds{job="webdriver"} - navigation_timing_connect_start_seconds{job="webdriver"}
+# Other
+instance:navigation_timing_latency_seconds = navigation_timing_response_start_seconds{job="webdriver"} - navigation_timing_fetch_start_seconds{job="webdriver"}
+instance:navigation_timing_transfer_seconds = navigation_timing_response_end_seconds{job="webdriver"} - navigation_timing_response_start_seconds{job="webdriver"}
+instance:navigation_timing_dom_processing_interactive_seconds = navigation_timing_dom_interactive_seconds{job="webdriver"} - navigation_timing_dom_loading_seconds{job="webdriver"}
+instance:navigation_timing_dom_processing_complete_seconds = navigation_timing_dom_complete_seconds{job="webdriver"} - navigation_timing_dom_interactive_seconds{job="webdriver"}
+instance:navigation_timing_onload_seconds = navigation_timing_load_event_end_seconds{job="webdriver"} - navigation_timing_load_event_start_seconds{job="webdriver"}
+```
+
 ## Limitations
 
 ### Chromedriver only (currently)
