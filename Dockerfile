@@ -14,5 +14,6 @@ FROM robcherry/docker-chromedriver
 
 COPY --from=builder /go/src/app/app /usr/local/bin/webdriver_exporter
 COPY etc/supervisor/conf.d/exporter.conf /etc/supervisor/conf.d/exporter.conf
+RUN useradd -ms /bin/bash dev
 
 EXPOSE 9156
