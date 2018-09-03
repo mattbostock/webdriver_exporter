@@ -30,7 +30,7 @@ const versionString = "0.0.2"
 
 var (
 	driver        = agouti.ChromeDriver()
-	listenAddress = flag.String("web.listen-address", "localhost:9156", "The address to listen on for HTTP requests.")
+	listenAddress = flag.String("web.listen-address", "0.0.0.0:9156", "The address to listen on for HTTP requests.")
 	showVersion   = flag.Bool("version", false, "Print version information.")
 )
 
