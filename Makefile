@@ -5,7 +5,7 @@ build:
 	docker build -t nouchka/webdriver_exporter .
 
 run:
-	docker run --rm --shm-size=2G \
+	docker run --rm --shm-size=512M \
 		-p 9156:9156 \
 		--name webdriver_exporter \
 		nouchka/webdriver_exporter
