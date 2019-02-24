@@ -1,0 +1,3 @@
+[submodule "vendor/github.com/sclevine/agouti"]
+	path = vendor/github.com/sclevine/agouti
+	url = https://github.com/sclevine/agouti.git
